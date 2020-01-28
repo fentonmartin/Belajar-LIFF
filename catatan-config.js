@@ -8,7 +8,7 @@ function loadCatatan() {
                 '<th>ID</th>' +
                 '<th>Nama</th>' +
                 '<th>Tanggal</th>' +
-                '<th>Agenda</th>' +
+                '<th>Feedback</th>' +
                 '<th>Hapus Agenda</th>' +
                 '<th>Lihat Agenda</th>' +
                 '<th>Edit Agenda</th>' +
@@ -89,11 +89,11 @@ function simpanData() {
     } else {
         liff.sendMessages([{
             'type': 'text',
-            'text': "Catatan baru berhasil disimpan"
+            'text': "Feedback baru berhasil disimpan"
         }]).then(function() {
-            alert('Catatan Tersimpan');
+            alert('Feedback tersimpan');
         }).catch(function(error) {
-            alert('Aduh kok error ya...');
+            alert('Feedback error');
         });
     }
 
@@ -127,11 +127,11 @@ function simpanEditData() {
     } else {
         liff.sendMessages([{
             'type': 'text',
-            'text': "Catatan yang diedit sudah tersimpan"
+            'text': "Feedback yang diedit sudah tersimpan"
         }]).then(function() {
-            alert('Catatan tersimpan');
+            alert('Feedback tersimpan');
         }).catch(function(error) {
-            alert('Aduh kok error ya...');
+            alert('Feedback error');
         });
     }
 
@@ -155,11 +155,11 @@ function hapusData(id) {
     } else {
         liff.sendMessages([{
             'type': 'text',
-            'text': "Catatan sudah terhapus"
+            'text': "Feedback sudah terhapus"
         }]).then(function() {
-            alert('Catatan sudah dihapus');
+            alert('Feedback sudah dihapus');
         }).catch(function(error) {
-            alert('Aduh kok nggak bisa');
+            alert('Feedback error');
         });
     }
 
