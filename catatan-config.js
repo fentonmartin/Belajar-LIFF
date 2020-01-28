@@ -31,7 +31,7 @@ function loadCatatan() {
 
         }
         else {
-            data_app = "Catatan masih kosong nih";
+            data_app = "Feedback kosong";
         }
 
 
